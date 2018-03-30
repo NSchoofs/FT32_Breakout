@@ -1,5 +1,5 @@
-C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\FT32_Breakout_Board.cpp.o: \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\FT32_Breakout_Board.cpp \
+C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\FT32_Breakout_Board.cpp.o: \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\FT32_Breakout_Board.cpp \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/stdint.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/machine/_default_types.h \
@@ -122,11 +122,17 @@ C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Esp.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\variants\esp32/pins_arduino.h \
- C:\Users\Nicolai\Documents\Arduino\libraries\SparkFun_SX1509_Arduino_Library-master\src/SparkFunSX1509.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\SX1509Handler.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\AssetHandler.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\WiFi\src/WiFi.h \
+ C:\Users\Jup\Documents\Arduino\libraries\Adafruit_GFX_Library/gfxfont.h \
+ C:\Users\Jup\Documents\Arduino\libraries\Adafruit_GFX_Library/Adafruit_SPITFT_Macros.h \
+ C:\Users\Jup\Documents\Arduino\libraries\Adafruit_GFX_Library/Adafruit_SPITFT.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Print.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\SPI\src/SPI.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/esp32-hal-spi.h \
+ C:\Users\Jup\Documents\Arduino\libraries\Adafruit_GFX_Library/Adafruit_GFX.h \
+ C:\Users\Jup\Documents\Arduino\libraries\Adafruit_GFX_Library/gfxfont.h \
+ C:\Users\Jup\Documents\Arduino\libraries\SparkFun_SX1509_Arduino_Library-master\src/SparkFunSX1509.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\AssetHandler.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\WiFi\src/WiFi.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/IPv6Address.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\WiFi\src/WiFiType.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\WiFi\src/WiFiSTA.h \
@@ -174,24 +180,19 @@ C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Udp.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/cbuf.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Esp.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\SPIFFSTest.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\SPIFFSTest.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\SPIFFS\src/SPIFFS.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\FS\src/FS.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebsocketHandler.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebSocketServer.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebSocketConnection.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WiFi.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\Mutex.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\ft_ESP32_SHM.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\webData_SHM.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\NetworkHandler.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\ft_ESP32_SW_Queue.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\ft_ESP32_queueCreator.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\ft_ESP32_IOobjects.h \
- C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\ft_ESP32_queueWorker.h \
- C:\Users\Nicolai\Documents\Arduino\libraries\Adafruit_GFX_Library/Adafruit_GFX.h \
- C:\Users\Nicolai\Documents\Arduino\libraries\Adafruit_GFX_Library/gfxfont.h \
- C:\Users\Nicolai\Documents\Arduino\libraries\Adafruit_SSD1306/Adafruit_SSD1306.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\SPI\src/SPI.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/esp32-hal-spi.h \
- C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2017\Professional\Common7\IDE\Extensions\kuedxvg2.nmj\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebsocketHandler.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebSocketServer.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebSocketConnection.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\Mutex.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\ft_ESP32_SHM.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\webData_SHM.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\NetworkHandler.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\ft_ESP32_SW_Queue.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\ft_ESP32_queueCreator.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\ft_ESP32_IOobjects.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\ft_ESP32_queueWorker.h \
+ C:\Users\Jup\Documents\Arduino\libraries\Adafruit_GFX_Library/Adafruit_GFX.h \
+ C:\Users\Jup\Documents\Arduino\libraries\Adafruit_SSD1306/Adafruit_SSD1306.h

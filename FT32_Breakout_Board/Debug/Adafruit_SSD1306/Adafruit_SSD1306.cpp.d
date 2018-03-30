@@ -1,5 +1,5 @@
-C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\Adafruit_SSD1306\Adafruit_SSD1306.cpp.o: \
- C:\Users\Nicolai\Documents\Arduino\libraries\Adafruit_SSD1306\Adafruit_SSD1306.cpp \
+C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\Adafruit_SSD1306\Adafruit_SSD1306.cpp.o: \
+ C:\Users\Jup\Documents\Arduino\libraries\Adafruit_SSD1306\Adafruit_SSD1306.cpp \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/pgmspace.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/stdlib.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/machine/ieeefp.h \
@@ -106,7 +106,7 @@ C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\SPI\src/SPI.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\variants\esp32/pins_arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/esp32-hal-spi.h \
- C:\Users\Nicolai\Documents\Arduino\libraries\Adafruit_GFX_Library/Adafruit_GFX.h \
+ C:\Users\Jup\Documents\Arduino\libraries\Adafruit_GFX_Library/Adafruit_GFX.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/freertos/freertos/task.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/limits.h \
@@ -128,5 +128,5 @@ C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/HardwareSerial.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Esp.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Print.h \
- C:\Users\Nicolai\Documents\Arduino\libraries\Adafruit_GFX_Library/gfxfont.h \
- C:\Users\Nicolai\Documents\Arduino\libraries\Adafruit_SSD1306\Adafruit_SSD1306.h
+ C:\Users\Jup\Documents\Arduino\libraries\Adafruit_GFX_Library/gfxfont.h \
+ C:\Users\Jup\Documents\Arduino\libraries\Adafruit_SSD1306\Adafruit_SSD1306.h

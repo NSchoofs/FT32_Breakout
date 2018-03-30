@@ -42,10 +42,7 @@ const byte SX1509_I2C_PIN_SDA = 21;
 const byte SX1509_I2C_PIN_SCL = 22;
 const byte SX1509_PIN_RESET = 16;
 const byte SX1509_PIN_EXTI = 17;
-SX1509 *sx1509Object;				//i2c SDA = PIN 21, SCL = PIN 22
-bool initSX1509 = false;
-
-void InitSX1509();
+static bool initSX1509 = false;
 
 class Motor
 {

@@ -17,6 +17,7 @@ void delay(double) {}
 //Ende der Prototypen für VS
 */
 
+SX1509 *sx1509Object;				//i2c SDA = PIN 21, SCL = PIN 22
 void InitSX1509() 
 {
 	if (initSX1509)
@@ -196,7 +197,7 @@ Lampe::Lampe(unsigned int lampeNr)
 	}
 	else	//Lampen 1,3,5,... werden durch Pins der DIR-Reihe angesteuert
 	{
-		mPortNrPWM = PORT_M_DIR[mLampeNr/2];
+		mPortNrPWM = SX1509PORT_M_DIR[mLampeNr/2];
 	}
 	mHelligkeit = 0;
 

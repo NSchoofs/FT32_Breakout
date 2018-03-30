@@ -1,6 +1,6 @@
-C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\NetworkHandler.cpp.o: \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\NetworkHandler.cpp \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\NetworkHandler.h \
+C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\NetworkHandler.cpp.o: \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\NetworkHandler.cpp \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\NetworkHandler.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\WiFi\src/WiFi.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/stdint.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/machine/_default_types.h \

@@ -1,7 +1,7 @@
-C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebSocketClient.cpp.o: \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\WebSocketClient.cpp \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\global.h \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\WebSocketClient.h \
+C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebSocketClient.cpp.o: \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebSocketClient.cpp \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\global.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebSocketClient.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/stdint.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/machine/_default_types.h \
@@ -124,5 +124,5 @@ C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Esp.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\variants\esp32/pins_arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Client.h \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\sha1.h \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\Base64.h
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\sha1.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\Base64.h

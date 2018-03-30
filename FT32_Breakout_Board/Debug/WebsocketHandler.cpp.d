@@ -1,6 +1,6 @@
-C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebsocketHandler.cpp.o: \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\WebsocketHandler.cpp \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\WebsocketHandler.h \
+C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebsocketHandler.cpp.o: \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebsocketHandler.cpp \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebsocketHandler.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\WiFi\src/WiFi.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/stdint.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/machine/_default_types.h \
@@ -170,8 +170,8 @@ C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\WiFi\src/WiFiUdp.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Udp.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/cbuf.h \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\WebSocketServer.h \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\WebSocketConnection.h \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\Mutex.h \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\ft_ESP32_SHM.h \
- C:\Users\Nicolai\Documents\GitHub\ft32\FT32_Breakout_Board\webData_SHM.h
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebSocketServer.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\WebSocketConnection.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\Mutex.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\ft_ESP32_SHM.h \
+ C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\webData_SHM.h

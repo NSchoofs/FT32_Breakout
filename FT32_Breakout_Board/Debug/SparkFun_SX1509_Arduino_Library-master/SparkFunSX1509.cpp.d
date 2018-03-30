@@ -1,5 +1,5 @@
-C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\SparkFun_SX1509_Arduino_Library-master\SparkFunSX1509.cpp.o: \
- C:\Users\Nicolai\Documents\Arduino\libraries\SparkFun_SX1509_Arduino_Library-master\src\SparkFunSX1509.cpp \
+C:\Users\Jup\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32\Debug\SparkFun_SX1509_Arduino_Library-master\SparkFunSX1509.cpp.o: \
+ C:\Users\Jup\Documents\Arduino\libraries\SparkFun_SX1509_Arduino_Library-master\src\SparkFunSX1509.cpp \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\libraries\Wire\src/Wire.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/esp32-hal.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32/tools/sdk/include/newlib/stdint.h \
@@ -124,5 +124,5 @@ C:\Users\Nicolai\AppData\Local\Temp\VMBuilds\FT32_Breakout_Board\espressif_esp32
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/HardwareSerial.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\cores\esp32/Esp.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\espressif\esp32\variants\esp32/pins_arduino.h \
- C:\Users\Nicolai\Documents\Arduino\libraries\SparkFun_SX1509_Arduino_Library-master\src\SparkFunSX1509.h \
- C:\Users\Nicolai\Documents\Arduino\libraries\SparkFun_SX1509_Arduino_Library-master\src\util/sx1509_registers.h
+ C:\Users\Jup\Documents\Arduino\libraries\SparkFun_SX1509_Arduino_Library-master\src\SparkFunSX1509.h \
+ C:\Users\Jup\Documents\Arduino\libraries\SparkFun_SX1509_Arduino_Library-master\src\util/sx1509_registers.h
