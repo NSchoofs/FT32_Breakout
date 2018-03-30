@@ -1,5 +1,7 @@
+#include <gfxfont.h>
+#include <Adafruit_SPITFT_Macros.h>
+#include <Adafruit_SPITFT.h>
 #include <SparkFunSX1509.h>
-#include "SX1509Handler.h"
 #include "AssetHandler.h"
 #include "WebsocketHandler.h"
 #include "NetworkHandler.h"
