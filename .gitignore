@@ -2,3 +2,10 @@
 .vs/FT32_Breakout_Board/v15/.suo
 
 .vs
+
+_vm/
+
+Debug/
+
+
+FT32_Breakout_Board.vcxproj
