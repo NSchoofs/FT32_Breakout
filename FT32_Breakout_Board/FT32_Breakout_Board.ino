@@ -1,3 +1,4 @@
+#include "BeispielAnwendung.h"
 #include <gfxfont.h>
 #include <Adafruit_SPITFT_Macros.h>
 #include <Adafruit_SPITFT.h>
@@ -58,6 +59,8 @@ void setup() {
 void loop() {
 	nAssetHandler->handleAssetRequests();
 	wsHandler->handleWebSocketRequests();
+
+
 }
 
 
