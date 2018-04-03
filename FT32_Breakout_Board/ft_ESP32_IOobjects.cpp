@@ -36,17 +36,17 @@ void InitSX1509()
 	//--Motor Pins
 	for (byte i = 0; i < MOTOR_QTY; i++)
 	{
-		pinMode(SX1509PORT_M_DIR[i], OUTPUT);
+		sx1509Object->pinMode(SX1509PORT_M_DIR[i], OUTPUT);
 	}
 	for (byte i = 0; i < MOTOR_QTY; i++)
 	{
-		pinMode(SX1509PORT_M_PWM[i], OUTPUT);
+		sx1509Object->pinMode(SX1509PORT_M_PWM[i], OUTPUT);
 	}
-
-
+	for (byte i = 0; i < 15; i++) 
+	{
+		sx1509Object->ledDriverInit(i, 7);					//maximaler PWM prescaler, da immernoch 31.25MHz
+	}
 	
-
-
 	initSX1509 = true;
 }
 
@@ -84,7 +84,7 @@ Motor::Motor(unsigned int motorNr)
 	mRechtslauf = true;
 	mDrehzahl = 0;
 
-	/*
+	
 	//Zuweisen PWM-Generator zu Pin. Generator 0,2,4,6 für Drehzahl
 	ledcAttachPin(mPortNrPWM, mMotorNr*2);	//Pin-Nr für Drehzahl, PWM-Generator Nr
 	ledcSetup(mMotorNr*2, 21700, 8);	//PWM-Generator Nr, 21.7 kHz PWM, 8-bit resolution (0..255)
@@ -95,7 +95,7 @@ Motor::Motor(unsigned int motorNr)
 	ledcAttachPin(mPortNrDir, (mMotorNr*2)+1);	//Pin-Nr für Richtungsangabe, PWM-Generator Nr
 	ledcSetup(mMotorNr*2+1, 21700, 8);
 	
-	*/
+	
 	sx1509Object->analogWrite(mPortNrPWM, 0);	//frühzeitiges Definieren des PWM-Generators (PWM-Generator Nr., PWM-Wert (0..255))
 	sx1509Object->analogWrite(mPortNrDir, 255);	//frühzeitiges Definieren des Dir-Pins
 }
@@ -193,7 +193,7 @@ Lampe::Lampe(unsigned int lampeNr)
 	//Folgender Abschnitt erlaubt es pro 'pololu a4990 dual-motor-driver' 4 Lampen unabhängig voneinander anzusteuern
 	if(mLampeNr % 2 == 0)	//Lampen 0,2,4,... werden durch Pins der PWM-Reihe angesteuert
 	{
-		mPortNrPWM = PORT_L_PWM[mLampeNr/2];
+		mPortNrPWM = SX1509PORT_L_PWM[mLampeNr/2];
 	}
 	else	//Lampen 1,3,5,... werden durch Pins der DIR-Reihe angesteuert
 	{
@@ -329,11 +329,25 @@ DigitalIO_PWMout::DigitalIO_PWMout(byte io, byte inOut)
 
 bool DigitalIO_PWMout::getValue()
 {
+	if (mDirection != INPUT) {
+		sx1509Object->pinMode(mIOPin, INPUT);
+		mDirection = INPUT;
+		Serial.print("SX1509 IO Output wurde in 'getValue' zu Input geändert, IONumber: " + mIONumber);
+		Serial.print("IOPin: " + mIOPin);
+	}
+
 	return sx1509Object->digitalRead(mIOPin);
 }
 
 void DigitalIO_PWMout::setValueDig(bool val)
 {
+	if (mDirection != OUTPUT) {
+		sx1509Object->pinMode(mIOPin, OUTPUT);
+		mDirection = OUTPUT;
+		Serial.print("SX1509 IO Input wurde in 'setValueDig' zu Output geändert, IONumber: " + mIONumber);
+		Serial.print("IOPin: " + mIOPin);
+	}
+
 	if (val)
 		sx1509Object->digitalWrite(mIOPin, HIGH);
 	else
@@ -342,9 +356,12 @@ void DigitalIO_PWMout::setValueDig(bool val)
 
 void DigitalIO_PWMout::setPWM(unsigned char pwmVal)
 {
-	if (mDirection == OUTPUT)
-		sx1509Object->analogWrite(mIOPin, pwmVal);
-	else
-		Serial.print("SX1509 IO Input wurde als Output verwendet");
+	if (mDirection != OUTPUT) {
+		sx1509Object->pinMode(mIOPin, OUTPUT);
+		mDirection = OUTPUT;
+		Serial.print("SX1509 IO Input wurde in 'setPWM' zu Output geändert, IONumber: " + mIONumber);
+		Serial.print("IOPin: " + mIOPin);
+	}
 
+	sx1509Object->analogWrite(mIOPin, pwmVal);
 }

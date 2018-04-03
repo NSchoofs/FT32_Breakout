@@ -15,6 +15,9 @@ AssetHandler *nAssetHandler;
 WebsocketHandler *wsHandler;
 NetworkHandler nHandler;
 
+//Beispielanwendung (soll mit separatem Knopf stop, start und pausiert gemacht werden)
+//BeispielAnwendung myBeispiel;
+
 SHM *ptrSHM;
 SW_queue mySW_queue;
 
@@ -54,6 +57,8 @@ void setup() {
 		0,          			/* Priority of the task */
 		NULL,       			/* Task handle. */
 		1);  					/* Core where the task should run */
+
+	//myBeispiel = BeispielAnwendung(ptrSHM);
 }
 
 void loop() {

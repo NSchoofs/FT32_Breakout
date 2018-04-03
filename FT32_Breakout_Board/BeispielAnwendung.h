@@ -1,6 +1,7 @@
 // BeispielAnwendung.h
 #include "ft_ESP32_IOobjects.h"
-#include "task.h"
+#include "ft_ESP32_SHM.h"
+
 
 #ifndef _BEISPIELSANWENDUNG_h
 #define _BEISPIELSANWENDUNG_h
@@ -21,13 +22,15 @@ typedef struct {
 	e_BeispielState_t state;
 	unsigned char step;
 	Motor mMotors[4];
+	SHM *ptrSHMQueue;
 } st_BeispielSHM_e;
 
 
 
 class BeispielAnwendung {
 public:
-	BeispielAnwendung();
+	//BeispielAnwendung();
+	BeispielAnwendung(SHM *ptrSHMQueueArg);		//benötigt SHM ptr zum SW-Queue SHM um zu überprüfen, ob Cody++ gerade aktiv ist --> Beispielanwendung wird gestoppt
 	~BeispielAnwendung();
 	void start();
 	void pause();
@@ -37,7 +40,7 @@ private:
 	//bool mPause;
 	//bool mStop;
 	st_BeispielSHM_e *mSHM;		//SHM mit Run-Task
-	void *mTask;				//task Handle
+	TaskHandle_t *mTask;				//task Handle
 };
 
 

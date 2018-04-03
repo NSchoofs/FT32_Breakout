@@ -25,11 +25,11 @@ const int PIN_L_INH = 27;	//Output-Pin Einschalten Lampentreiber
 const int PORT_IN[DAIN_QTY] = { 39, 34, 35, 32, 33, 25, 26 };	//Input-Pins Ditital/Analog*/
 
 //Zuweisung Ports auf SX1509
-const byte SX1509PORT_M_DIR[MOTOR_QTY] = { 0, 2, 4, 6 };	//Motor Richtung - Output
-const byte SX1509PORT_M_PWM[MOTOR_QTY] = { 1, 3, 5, 7 };	//Output-Pins Motor-Drehzahl
+const byte SX1509PORT_M_DIR[MOTOR_QTY] = { 0, 2, 4, 6 };	//Motor Richtung - Output am SX1509
+const byte SX1509PORT_M_PWM[MOTOR_QTY] = { 1, 3, 5, 7 };	//Output-Pins Motor-Drehzahl (am ESP32)
 const byte PIN_M_INH = 27;	//Output-Pin Einschalten Motortreiber
 
-const byte PORT_L_PWM[LAMP_QTY] = { 04, 00, 02, 15 };	//Output-Pins Lampe, werden hier über den selben Treiber angesteuert
+const byte SX1509PORT_L_PWM[LAMP_QTY] = { 1, 3, 5, 7 };	//Output-Pins Lampe, werden hier über den selben Treiber angesteuert
 const byte PIN_L_INH = 27;	//Output-Pin Einschalten Lampentreiber
 
 const byte PORT_IN[DAIN_QTY] = { 39, 34, 35, 32, 33, 25, 26 };	//Input-Pins Ditital/Analog*/
@@ -99,14 +99,14 @@ class DigitalIO_PWMout
 {
 public:
 	DigitalIO_PWMout(byte io, byte inOut);		//io von 0-7, inOut-Constants von ARDUINO nutzen
-	bool getValue();
-	void setValueDig(bool val);
-	void setPWM(unsigned char pwmVal);
+	bool getValue();							//liest Digitalen Input (setzt Pin zu erst auf direction = INPUT)
+	void setValueDig(bool val);					//setzt digitalen Output (setzt Pin zu erst auf direction = OUTPUT)
+	void setPWM(unsigned char pwmVal);			//setzt Pin auf PWM (Frequenz fest für A4990 eingestellt - in init zu sehen)
 private:
 	DigitalIO_PWMout();
-	byte mIOPin;
-	byte mIONumber;
-	byte mDirection;
+	byte mIOPin;			//Pin am SX1509
+	byte mIONumber;			//Nummer des IOs (0-7)
+	byte mDirection;		//input oder output
 };
 
 #endif

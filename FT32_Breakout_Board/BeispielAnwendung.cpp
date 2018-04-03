@@ -9,10 +9,10 @@ void RunBeispielAnwendung(void* args) {
 	bool initPause = false;
 
 	while (1) {
-		/*if (//hier check ob Cody queue gefüllt ist)	
+		if (mSHM->ptrSHMQueue->commonStart)	
 		{
 			mSHM->state = BEISPIEL_STATE_PAUSE;
-		}*/
+		}
 
 		else if (mSHM->state == BEISPIEL_STATE_PAUSE) {		//alle Motoren Stoppen
 			if (!initPause) {
@@ -27,7 +27,7 @@ void RunBeispielAnwendung(void* args) {
 			mSHM->state = BEISPIEL_STATE_PAUSE;
 		}
 
-		else if (mSHM->state == BEISPEL_STATE_RUN) {
+		else if (mSHM->state == BEISPIEL_STATE_RUN) {
 			initPause = false;
 			switch (mSHM->step)
 			{
@@ -48,8 +48,14 @@ void RunBeispielAnwendung(void* args) {
 	}
 }
 
-BeispielAnwendung::BeispielAnwendung()
+//BeispielAnwendung::BeispielAnwendung()
+//{
+//	Serial.print("Falscher ctor für BeispielAnswendung genutzt");
+//}
+
+BeispielAnwendung::BeispielAnwendung(SHM *ptrSHMQueueArg)
 {
+	mSHM->ptrSHMQueue = ptrSHMQueueArg;
 	for (char i = 0; i < 4; i++)
 	{
 		mSHM->mMotors[i] = Motor(i);
@@ -60,7 +66,7 @@ BeispielAnwendung::BeispielAnwendung()
 		"BeispielAnwendung", 	/* Name of the task */
 		1024,      				/* Stack size in words */
 		(void*)mSHM,      		/* Task input parameter */
-		0,          			/* Priority of the task */
+		3,          			/* Priority of the task */
 		mTask,       			/* Task handle. */
 		1);  					/* Core where the task should run */
 }
